@@ -7,17 +7,14 @@ class Solution {
         
         for(int num : num_list){
             if(num % 2 == 0){
-                evenStr += num; 
+                evenStr += num + ""; 
             }
             else {
-                oddStr += num;
+                oddStr += num + "";
             }
         }
         
-        int oddNum = Integer.parseInt(oddStr);
-        int evenNum = Integer.parseInt(evenStr);
-
-        answer = oddNum + evenNum;
+        answer = Integer.parseInt(oddStr) + Integer.parseInt(evenStr);
         
         return answer;
     }
